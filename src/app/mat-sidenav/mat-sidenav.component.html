@@ -1,0 +1,10 @@
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" mode="side" #sideNav (closed)="log('Closed')" (openedChange)="log('Opened')">Sidenav</mat-sidenav>
+    <mat-sidenav-content>
+        Main
+        <button (click)="opened = !opened" mat-raised-button color="primary">Toggle Opened</button>
+        <button (click)="sideNav.open()" mat-raised-button color="accent">Open</button>
+        <button (click)="sideNav.close()" mat-raised-button color="primary">Close</button>
+        <button (click)="sideNav.toggle()" mat-raised-button color="warn">Toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>

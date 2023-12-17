@@ -1,0 +1,46 @@
+<div>
+    <button mat-button>Click Me!</button>
+    <button mat-raised-button>Click Me!</button>
+    <button mat-flat-button>Click Me!</button>
+    <button mat-stroked-button>Click Me!</button>
+</div>
+
+<div>
+    <button mat-icon-button>Icon</button>
+    <button mat-fab>Icon</button>
+    <button mat-mini-fab>Icon</button>
+</div>
+
+<div>
+    <button mat-button color="primary">Click Me!</button>
+    <button mat-button color="accent">Click Me!</button>
+    <button mat-button color="warn">Click Me!</button>
+
+    <button mat-raised-button color="primary">Click Me!</button>
+    <button mat-raised-button color="accent">Click Me!</button>
+    <button mat-raised-button color="warn">Click Me!</button>
+
+    <button mat-flat-button color="primary">Click Me!</button>
+    <button mat-flat-button color="accent">Click Me!</button>
+    <button mat-flat-button color="warn">Click Me!</button>
+
+    <button mat-stroked-button color="primary">Click Me!</button>
+    <button mat-stroked-button color="accent">Click Me!</button>
+    <button mat-stroked-button color="warn">Click Me!</button>
+</div>
+
+<div>
+    <mat-button-toggle #toggleButton checked="">Toggle</mat-button-toggle>
+    {{ toggleButton.checked }}
+</div>
+
+<div>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React JS</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue JS</mat-button-toggle>
+        <mat-button-toggle value="next">Next JS</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    {{ toggleGroup.value }}
+</div>
